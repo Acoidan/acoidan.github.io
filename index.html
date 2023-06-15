@@ -63,26 +63,51 @@
       color: #333;
       font-weight: bold;
     }
+    /* Estilos para animaciones */
+    .section {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fade-in 1s ease forwards;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var sections = document.getElementsByClassName('section');
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].style.animationDelay = i * 0.2 + 's';
+      }
+    });
+  </script>
 </head>
 <body>
   <div class="container">
     <h1>Mi Currículum</h1>
 
-    <img class="profile-picture" src="tu-foto.jpg" alt="Foto de perfil">
+    <img class="profile-picture fade-in" src="https://media.licdn.com/dms/image/D4D03AQFKjSTbxmN6bA/profile-displayphoto-shrink_800_800/0/1677858597688?e=2147483647&v=beta&t=HfOvNYmTZyooXYIVo8pHglojppCwTt4kUuxXjNQit9w" alt="Foto de perfil">
 
-    <div class="section">
+    <div class="section fade-in">
       <div class="section-banner section-banner-info" style="margin-top: 20px;">
         <h2>Información Personal</h2>
       </div>
-      <p><span class="highlight">Nombre:</span> Juan Pérez</p>
+      <p><span class="highlight">Nombre:</span> Acoidan Francisco Negrín Socorro</p>
       <p><span class="highlight">Fecha de Nacimiento:</span> 15 de Enero, 1985</p>
       <p><span class="highlight">Dirección:</span> Calle Principal 123, Ciudad</p>
       <p><span class="highlight">Teléfono:</span> (123) 456-7890</p>
       <p><span class="highlight">Correo Electrónico:</span> juanperez@example.com</p>
     </div>
 
-    <div class="section">
+    <div class="section fade-in">
       <div class="section-banner section-banner-education">
         <h2>Educación</h2>
       </div>
@@ -91,7 +116,7 @@
       <p><span class="highlight">Año de Graduación:</span> 2007</p>
     </div>
 
-    <div class="section">
+    <div class="section fade-in">
       <div class="section-banner section-banner-experience">
         <h2>Experiencia Laboral</h2>
       </div>
@@ -100,7 +125,6 @@
       <p><span class="highlight">Fecha:</span> Enero 2008 - Presente</p>
       <p><span class="highlight">Descripción:</span> Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías como HTML, CSS, JavaScript y PHP.</p>
     </div>
-
   </div>
 </body>
 </html>
