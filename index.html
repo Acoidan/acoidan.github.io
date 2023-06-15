@@ -1,7 +1,106 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Mi Currículum</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .profile-picture {
+      display: block;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .section-banner {
+      padding: 8px;
+      border-radius: 5px;
+      text-align: center;
+      color: #333;
+      font-weight: bold;
+      background-color: #cdcdcd;
+    }
+
+    .section p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .section .highlight {
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="container">
+    <h1>Mi Currículum</h1>
+
+    <img class="profile-picture" src="tu-foto.jpg" alt="Foto de perfil">
+
+    <div class="section">
+      <div class="section-banner section-banner-info" style="margin-top: 20px;">
+        <h2>Información Personal</h2>
+      </div>
+      <p><span class="highlight">Nombre:</span> Juan Pérez</p>
+      <p><span class="highlight">Fecha de Nacimiento:</span> 15 de Enero, 1985</p>
+      <p><span class="highlight">Dirección:</span> Calle Principal 123, Ciudad</p>
+      <p><span class="highlight">Teléfono:</span> (123) 456-7890</p>
+      <p><span class="highlight">Correo Electrónico:</span> juanperez@example.com</p>
+    </div>
+
+    <div class="section">
+      <div class="section-banner section-banner-education">
+        <h2>Educación</h2>
+      </div>
+      <p><span class="highlight">Título:</span> Licenciatura en Ingeniería Informática</p>
+      <p><span class="highlight">Universidad:</span> Universidad XYZ</p>
+      <p><span class="highlight">Año de Graduación:</span> 2007</p>
+    </div>
+
+    <div class="section">
+      <div class="section-banner section-banner-experience">
+        <h2>Experiencia Laboral</h2>
+      </div>
+      <p><span class="highlight">Puesto:</span> Desarrollador de Software</p>
+      <p><span class="highlight">Empresa:</span> ABC Company</p>
+      <p><span class="highlight">Fecha:</span> Enero 2008 - Presente</p>
+      <p><span class="highlight">Descripción:</span> Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías como HTML, CSS, JavaScript y PHP.</p>
+    </div>
+
+  </div>
 </body>
 </html>
